@@ -16,7 +16,7 @@ App\Entity\Timesheet:
             groups: [Default]
         description:
             include: true
-            groups: [Entity]
+            groups: [Entity, Description]
         rate:
             include: true
             groups: [Default]

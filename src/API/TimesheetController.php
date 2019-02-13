@@ -127,7 +127,7 @@ class TimesheetController extends BaseApiController
         $data = (array) $data->getCurrentPageResults();
 
         $view = new View($data, 200);
-        $view->getContext()->setGroups(['Default', 'Collection', 'Timesheet']);
+        $view->getContext()->setGroups(['Default', 'Collection', 'Timesheet', 'Description']);
 
         return $this->viewHandler->handle($view);
     }
